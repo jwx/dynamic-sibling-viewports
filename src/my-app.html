@@ -1,0 +1,12 @@
+<import from="./welcome-page"></import>
+<import from="./about-page"></import>
+<import from="./something-page"></import>
+<!-- <import from="./missing-page"></import> -->
+
+<nav>
+  <a click.trigger="add('welcome-page')">Welcome</a>
+  <a click.trigger="add('something-page')">Something</a>
+  <a click.trigger="add('about-page')">About</a>
+</nav>
+
+  <au-viewport repeat.for="component of components" default="${component}" name="${component}"></au-viewport>
