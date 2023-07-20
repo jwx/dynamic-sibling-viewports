@@ -16,3 +16,7 @@ a:hover {
 .active {
   background-color: lightgray;
 }
+
+au-viewport:empty {
+  /* display: none; */
+}

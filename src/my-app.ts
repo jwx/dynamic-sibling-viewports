@@ -1,15 +1,14 @@
-import { Components } from "./component-list";
+import { IRoute } from "@aurelia/router";
 
 export class MyApp {
-  public windows: unknown[] = [{}];
-
-  public get components(): string[] {
-    console.log('components', Components.list);
-    return Components.list;
-  }
-
-  public add(component: string) {
-    Components.add(component);
-  }
+  static routes: IRoute[] = [
+    {
+      path: '',
+      redirectTo: 'asdf'
+    },
+    {
+      path: ':id',
+      component: () => import('./workspace-page'),
+    },
+  ];
 }
-
