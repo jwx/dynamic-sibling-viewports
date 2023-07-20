@@ -20,3 +20,7 @@ a:hover {
 au-viewport:empty {
   display: none;
 }
+
+.page > div {
+  display: inline-flex;
+}
